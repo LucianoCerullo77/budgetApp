@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -6,6 +5,7 @@ import { CabeceroComponent } from './cabecero/cabecero.component';
 import { IngresoComponent } from './ingreso/ingreso.component';
 import { EgresoComponent } from './egreso/egreso.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -13,12 +13,10 @@ import { FormularioComponent } from './formulario/formulario.component';
     CabeceroComponent,
     IngresoComponent,
     EgresoComponent,
-    FormularioComponent
+    FormularioComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
