@@ -40,4 +40,8 @@ export class AppComponent {
   getPorcentajeTotal() {
     return this.getEgresoTotal() / this.getIngresoTotal();
   }
+
+  getPresupuestoTotal() {
+    return this.getIngresoTotal() - this.getEgresoTotal();
+  }
 }
