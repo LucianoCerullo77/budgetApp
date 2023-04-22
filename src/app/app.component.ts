@@ -36,4 +36,8 @@ export class AppComponent {
     });
     return egresoTotal;
   }
+
+  getPorcentajeTotal() {
+    return this.getEgresoTotal() / this.getIngresoTotal();
+  }
 }
