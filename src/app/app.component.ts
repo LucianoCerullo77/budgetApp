@@ -28,4 +28,12 @@ export class AppComponent {
     });
     return ingresoTotal;
   }
+
+  getEgresoTotal() {
+    let egresoTotal: number = 0;
+    this.egresos.forEach((egreso) => {
+      egresoTotal = +egreso.valor;
+    });
+    return egresoTotal;
+  }
 }
